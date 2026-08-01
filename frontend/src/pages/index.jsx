@@ -42,7 +42,7 @@ export default function Home() {
             </div>
 
             <div className={styles.mainContainer_right}>
-              <img src="images/con.png" alt="" />
+              <img src="images/connect.png" alt="" />
             </div>
 
           </div>
