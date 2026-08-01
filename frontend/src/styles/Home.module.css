@@ -1,0 +1,123 @@
+.container {
+    font-family: "Poppins";
+    padding: 1.2rem;
+    
+}
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-inline: 2rem;
+    min-height: 80vh;
+}
+
+/* .mainContainer_right img{
+    width:100%;
+    max-width:450px;
+    height:auto;
+    display:block;
+    margin:auto;
+} */
+ .mainContainer_right img{
+    width:100%;
+    max-width:450px;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+
+.mainContainer_left {
+    flex: 0.5;
+}
+
+.mainContainer_right {
+    flex: 0.5;
+}
+
+.mainContainer_left > p:nth-child(1) {
+  font-size: 2.9rem;
+  background: -webkit-linear-gradient(45deg, #000000, #9d9d9d);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mainContainer_left > p:nth-child(2) {
+  color: #4D4D4D;
+  font-size: 1.7rem;
+}
+
+.mainContainer_left > div.buttonJoin {
+  width: fit-content;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+  background: rgb(197,44,208);
+  color: white;
+  padding-inline: 1.2rem;
+  padding-block: 0.6rem;
+  border-radius: 20px;
+}
+/* 
+@media screen and (max-width: 600px) {
+
+    .mainContainer {
+      flex-direction: column;
+      gap: 2rem;
+      padding-top: 2rem;
+    }
+
+    .mainContainer_left {
+      flex: 1;
+      padding-top:1.5rem;
+    }
+
+    .mainContainer_right {
+      flex: 1;
+    }
+
+} */
+
+@media screen and (max-width:600px){
+
+    .container{
+        padding:1rem;
+    }
+
+    .mainContainer{
+        flex-direction:column;
+        gap:2rem;
+        padding:2rem 0;
+        text-align:center;
+        min-height:auto;
+    }
+
+    .mainContainer_left,
+    .mainContainer_right{
+        flex:1;
+        width:100%;
+    }
+
+    .mainContainer_left > p:nth-child(1){
+        font-size:2.1rem;
+        line-height:1.2;
+    }
+
+    .mainContainer_left > p:nth-child(2){
+        font-size:1.1rem;
+        margin-top:1rem;
+    }
+
+    .buttonJoin{
+        margin:1.5rem auto 0;
+    }
+
+    .mainContainer_right img{
+        width:90%;
+        max-width:320px;
+    }
+
+}
